@@ -1,2 +1,2 @@
 # merrills-python-examples
-Examples of my work with Python.
+This repository is only meant to store and show small, simple examples of what I can do with Python.
