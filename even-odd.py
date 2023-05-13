@@ -12,10 +12,8 @@ while True:
     players_num = input("How many players would you like? (1-4)\n> ")
     if not players_num.isdecimal():
         print("Please type a number.\n")
-        # continue
     elif int(players_num) < 1 or int(players_num) > 4:
         print("Please type 1, 2, 3, or 4.\n")
-        # continue
     else:
         players_num = int(players_num)
         break
@@ -96,10 +94,8 @@ while playing:
             bet = input(f"{person_real}, what amount do you want to bet?\n> ")
             if not bet.isdecimal():
                 print("Please type a number.\n")
-                # continue
             elif int(bet) > players_dict[person_real][0]:
                 print("You cannot bet more than you have. Please bet lower.\n")
-                # continue
             else:
                 bet = int(bet)
                 players_dict[person_real][1] = bet
@@ -118,7 +114,6 @@ while playing:
                 break
             else:
                 print("Please type either 'even' or 'e', or else type 'odd' or 'o'.\n")
-                # continue
 
         players_dict[person_real][2] = prediction
 
